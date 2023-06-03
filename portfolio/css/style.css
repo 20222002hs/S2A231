@@ -75,6 +75,7 @@ a {
 ヘッダー
 ---------------------------------*/
 .header {
+  display: flex;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -83,18 +84,22 @@ a {
   box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
+.drawer_hidden {
+  display: none;
+}
+
 .header .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 20px 20px 20px 40px;
+  margin: 0;
 }
 
 .header-logo {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.2;
-  margin-right: 20px;
   letter-spacing: 0.05em;
 }
 
@@ -102,8 +107,14 @@ a {
   color: #333;
 }
 
+.header-nav {
+  margin: 0 20px 0 auto;
+}
+
 .header-nav-list {
   display: flex;
+  margin-top: 5%;
+  padding: 0;
   justify-content: space-between;
   list-style: none;
 }
@@ -506,24 +517,6 @@ recommend
 
 .flex-item p {
   font-size: 16px;
-}
-
-@media screen and (max-width: 780px) {
-  .flex-item:last-child {
-    display: none;
-  }
-
-  .flex-item:first-child {
-    width: 80vw;
-  }
-
-  .flex-item a:hover {
-    opacity: 0.7;
-  }
-
-  .flex-item p {
-    font-size: 16px;
-  }
 }
 
 /*--------------------------------
