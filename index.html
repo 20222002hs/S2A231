@@ -2,10 +2,11 @@
 <html lang="ja">
   <html>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>PORTFOLIO</title>
+    <link href="portfolio/css/style.css" rel="stylesheet" media="screen and (min-width: 800px)"/>
+    <link href="portfolio/css/mobile.css" rel="stylesheet" media="screen and (max-width: 799px)">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link href="portfolio/css/style.css" media="all" rel="stylesheet" type="text/css" />
     <link rel="icon" href="portfolio/img/favicon.ico">
   </head>
 
@@ -13,22 +14,26 @@
     <div class="wrapper">
       <!-- header -->
       <header class="header">
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+
         <div class="inner">
           <h1 class="header-logo">
-            <a href=".">HANDA SHOICHIRO</a>
+            <a href="#">HANDA SHOICHIRO</a>
           </h1>
-          <nav class="headerheader-nav">
-            <ul class="header-nav-list">
-              <li class="header-nav-item"><a href="#works">WORKS</a></li>
-              <li class="header-nav-item"><a href="#about">ABOUT</a></li>
-              <li class="header-nav-item"><a href="#skill">SKILL</a></li>
-              <li class="header-nav-item"><a href="#photo">PHOTO</a></li>
-              <li class="header-nav-item"><a href="#recommend">RECOMMEND</a></li>
-              <li class="header-nav-item"><a href="#contact">CONTACT</a></li>
-              <li class="header-nav-item"><a href="sub.html">SUB</a></li>
-            </ul>
-          </nav>
         </div>
+
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="#works">WORKS</a></li>
+            <li class="header-nav-item"><a href="#about">ABOUT</a></li>
+            <li class="header-nav-item"><a href="#skill">SKILL</a></li>
+            <li class="header-nav-item"><a href="#photo">PHOTO</a></li>
+            <li class="header-nav-item"><a href="#recommend">RECOMMEND</a></li>
+            <li class="header-nav-item"><a href="#contact">CONTACT</a></li>
+            <li class="header-nav-item"><a href="sub.html">SUB</a></li>
+          </ul>
+        </nav>
       </header>
       <!-- /header -->
 
