@@ -90,6 +90,7 @@ a {
 
 .header .inner {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px 20px 40px;
@@ -112,6 +113,14 @@ a {
 }
 
 .header-nav-list {
+  display: flex;
+  margin-top: 5%;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.sub-header-nav-list {
   display: flex;
   margin-top: 5%;
   padding: 0;
